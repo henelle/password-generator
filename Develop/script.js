@@ -126,6 +126,9 @@ var generatePassword = function() {
   } else if (promptSpecial) {
 
     return special(passwordLength);
+  } else {
+    window.alert("You have to make a selection!");
+    return generatePassword();
   }
 };
 
