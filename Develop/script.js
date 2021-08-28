@@ -98,6 +98,12 @@ var generatePassword = function() {
 
   var promptSpecial = window.confirm("Do you want special characters? Type 'yes' or 'no'.");
   
+  // All of the possible selections the user can make that will then decide the password that will be generated
+  if (promptUpper && promptLower && promptSpecial) {
+
+    return allCharacters(passwordLength);
+
+  } 
 };
 
 // Get references to the #generate element
