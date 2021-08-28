@@ -88,6 +88,16 @@ var generatePassword = function() {
   }
   
   passwordLength = parseInt(passwordLength);
+
+  // User decides which parameters they want their passwords to contain
+  var promptUpper = window.confirm("Do you want upper case letters? Type 'yes' or 'no'.");
+  
+
+  var promptLower = window.confirm("Do you want lower case letters ? Type 'yes' or 'no'.");
+  
+
+  var promptSpecial = window.confirm("Do you want special characters? Type 'yes' or 'no'.");
+  
 };
 
 // Get references to the #generate element
