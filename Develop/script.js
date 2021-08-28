@@ -103,7 +103,30 @@ var generatePassword = function() {
 
     return allCharacters(passwordLength);
 
-  } 
+  } else if (promptUpper && promptLower) {
+
+    return bothLetters(passwordLength);
+
+  } else if (promptUpper && promptSpecial) {
+
+    return upperSpecial(passwordLength);
+
+  } else if (promptLower && promptSpecial) {
+
+    return lowerSpecial(passwordLength);
+
+  } else if (promptUpper) {
+
+    return upperCase(passwordLength);
+
+  } else if (promptLower) {
+
+    return lowerCase(passwordLength);
+
+  } else if (promptSpecial) {
+
+    return special(passwordLength);
+  }
 };
 
 // Get references to the #generate element
