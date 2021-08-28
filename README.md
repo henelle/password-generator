@@ -14,4 +14,4 @@ https://henelle.github.io/password-generator/
 ### Created by Hien Nguyen 💖 
 
 ### Screenshot
-![Alt text](screenshot.png?raw=true "Website Screenshot")
+![Alt text](./Develop/screenshot.png?raw=true "Website Screenshot")
