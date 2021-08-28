@@ -80,6 +80,14 @@ function upperSpecial(length) {
 // Function to generate a random password based on which parameters is selected
 var generatePassword = function() {
   
+  // User decides the password length
+  var passwordLength = "";
+  
+  while (passwordLength === "" || passwordLength === null){
+    passwordLength = prompt("How long do you want your password? Pick between 8 and 128.");
+  }
+  
+  passwordLength = parseInt(passwordLength);
 };
 
 // Get references to the #generate element
