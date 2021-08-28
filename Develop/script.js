@@ -1,5 +1,9 @@
 // Assignment code here
 
+// Function to generate a random password based on which parameters is selected
+var generatePassword = function() {
+  
+};
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
