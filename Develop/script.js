@@ -33,6 +33,50 @@ function special(length) {
   return specialLetters;
 }
 
+// Function for upper case and lower case letters only
+function bothLetters(length) {
+  var twoLetters = "";
+  var twoSymbols =  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuxwxyz";
+  var twoLength = twoSymbols.length;
+  for ( var i = 0; i < length; i++ ) {
+    twoLetters += twoSymbols.charAt(Math.floor(Math.random() * twoLength));
+  }
+  return twoLetters;
+}
+
+// Function for upper case letters, lower case letters, and special characters
+function allCharacters(length) {
+  var allOfThem = "";
+  var allTheSymbols =  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuxwxyz!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  var allTheLength = allTheSymbols.length;
+  for ( var i = 0; i < length; i++ ) {
+    allOfThem += allTheSymbols.charAt(Math.floor(Math.random() * allTheLength));
+  }
+  return allOfThem;
+}
+
+// Function for lower case letters and special characters only
+function lowerSpecial(length) {
+  var lowerSpec = "";
+  var lowerSpecSymbols =  "abcdefghijklmnopqrstuxwxyz!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  var lowerSpecLength = lowerSpecSymbols.length;
+  for ( var i = 0; i < length; i++ ) {
+    lowerSpec += lowerSpecSymbols.charAt(Math.floor(Math.random() * lowerSpecLength));
+  }
+  return lowerSpec;
+}
+
+// Function for uppper case letters and special characrters only
+function upperSpecial(length) {
+  var upperSpec = "";
+  var upperSpecSymbols =  "ABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  var upperSpecLength = upperSpecSymbols.length;
+  for ( var i = 0; i < length; i++ ) {
+    upperSpec += upperSpecSymbols.charAt(Math.floor(Math.random() * upperSpecLength));
+  }
+  return upperSpec;
+}
+
 // Function to generate a random password based on which parameters is selected
 var generatePassword = function() {
   
